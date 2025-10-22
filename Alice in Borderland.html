@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ようこそ</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("card.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 20px;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 32px;
+  border: 3px solid white;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  animation: glow 1.5s infinite alternate;
+  transition: 0.3s;
+}
+@keyframes glow {
+  0% {
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 10px white;
+  }
+  50% {
+    color: red;
+    border-color: red;
+    box-shadow: 0 0 20px red;
+  }
+  100% {
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 10px white;
+  }
+}
+a:hover {
+  transform: scale(1.1);
+}
+audio {
+  display: none;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  a {
+    font-size: 1.1rem;
+    padding: 10px 24px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <h1>
+    ようこそ <br>
+    プレイヤーのゲムはま <br>
+    まもなく <br><br>
+    <a href="Loading.html" target="_blank">【START】</a> <br><br>
+    「開始」をクリックします
+
+  </h1>
+
+  <audio loop autoplay>
+    <source src="Alice in Borderland Ringtone.ogg" type="audio/ogg">
+    <source src="Alice in Borderland Ringtone.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>

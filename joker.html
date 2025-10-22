@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARD FOUND</title>
+  <style>
+    /* Reset + Base Style */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url("card.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      font-family: "Noto Sans JP", sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto;
+      width: 400px;
+      height: auto;
+      max-width: 90%;
+      border-radius: 10px;
+    }
+
+    /* Responsive font sizes */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      img {
+        width: 70%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>【CARD FOUND】</h1>
+  <h1>カードが見つかりました</h1>
+
+  <img src="https://i.pinimg.com/originals/82/17/d4/8217d41e709fe811fd57d55120fee6f6.gif" alt="joker card">
+
+  <h1>
+    【ARENA】<br>
+    【アリーナ】<br><br>
+    Room 402<br>
+    402号室<br><br>
+    OCTOBER 23<br>
+    10月23日
+  </h1>
+
+</body>
+</html>
